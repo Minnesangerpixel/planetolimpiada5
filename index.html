@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сертификат</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="certificate" aria-label="Сертификат участника">
+      <div class="certificate__top">
+        <img class="qr" src="assets/qr-code.png" alt="QR-код сертификата" />
+        <div class="cert-date">12.03.2026</div>
+
+        <div class="cert-title">Сертификат</div>
+        <h1 class="cert-course">Прикладное программирование<br>if...else</h1>
+
+        <div class="if-art" aria-hidden="true">if {}</div>
+
+        <div class="cert-body">
+          <div class="cert-confirm">подтверждает, что</div>
+          <div class="cert-name">Куприянов Егор Алексеевич</div>
+          <p class="cert-text">
+            участвовал(а) в первом отборочном этапе Международной<br>
+            олимпиады «IT-Планета 2026» в конкурсе компании BRAIM,<br>
+            выполнив задание на 76.7% из 100%. Испытание успешно пройдено<br>
+            — участник допущен ко второму отборочному этапу Олимпиады.
+          </p>
+        </div>
+      </div>
+
+      <div class="certificate__bottom">
+        <div class="person">Шалашный Сергей Игоревич</div>
+        <div class="position">Председатель АНО ЦРИТ «ИТ-Планета»</div>
+        <img class="stamp" src="assets/stamp-signature.svg" alt="Подпись и печать" />
+        <div class="line"></div>
+
+        <div class="logos">
+          <div class="braim">
+            <div class="braim-logo">BRA<span>I</span>M</div>
+            <div class="created">Создано на<br>braim.org</div>
+          </div>
+          <div class="itplanet">IT <span></span> PLANET</div>
+        </div>
+      </div>
+    </section>
+
+    <button class="print-button" type="button" id="openInstruction">Инструкция по печати</button>
+  </main>
+
+  <div class="modal" id="instructionModal" aria-hidden="true">
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__head">
+        <h2 id="modalTitle">Инструкция</h2>
+        <button class="modal__close" type="button" id="closeInstruction" aria-label="Закрыть окно">×</button>
+      </div>
+      <div class="modal__content">
+        <p>Зайдите в меню вашего браузера с ПК или ноутбука и выберите пункт «Печать».</p>
+        <p>Затем выберите принтер «Сохранить как PDF».</p>
+        <p>В дополнительных настройках* установите:<br>
+          размер бумаги «А4»;<br>
+          поля «Нет»;<br>
+          масштаб «Персонализированные» значение 100%.<br>
+          Установите галочку «Фон» и нажмите «Сохранить». Сохранённый файл можно печатать. Перед печатью убедитесь, что QR-код не обрезан.
+        </p>
+        <p>*наименование настроек может отличаться в разных браузерах.</p>
+        <p>Для заказа оригинала обратитесь к организатору.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
